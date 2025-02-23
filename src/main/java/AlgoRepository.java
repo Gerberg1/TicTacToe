@@ -47,7 +47,6 @@ public class AlgoRepository {
 
 
     public void startAlphaBeta(FieldRepository fieldRepository) {
-        System.out.println(fieldRepository.getField(5));
         List<Field> emptyFields = getEmptyFields(fieldRepository);
         String type = algo.getColor();
 
