@@ -59,7 +59,7 @@ public class AlgoRepository {
         for (Field f : emptyFields) {
             FieldRepository tempRepository = new FieldRepository(fieldRepository);
             tempRepository.placePiece(type, String.valueOf(f.getNumber()));
-            int score = alphaBeta(tempRepository, 5, false, alpha, beta);
+            int score = alphaBeta(tempRepository, 9, false, alpha, beta);
             if (score > bestScore) {
                 bestScore = score;
                 bestMove = f.getNumber();
